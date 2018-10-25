@@ -1,0 +1,165 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+/***************font*/
+@font-face{
+    font-family: "Stylish";
+    src: url("img/stylish/Stylish-Regular.ttf");
+}
+
+html{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    height: auto;
+    width: 100%;
+    font-family: "Stylish";
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
+h2, .txchoix{
+    color: white;
+    font-size: 3em;
+    margin-top: 20px;
+    text-align: center;
+}
+header{
+    background-color: slategrey;
+}
+
+/******************zone choix de l'icone***********************/
+.container1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+}
+.logo{
+    width: 500px;
+    height: auto;
+    display: flex;
+
+}
+.logo button{
+    display: block;
+    border: none;
+    width: 200px;
+    height: 150px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 2% 2% 2% 2%;
+    box-shadow: 2px 2px 15px black;
+}
+
+button:hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+button img{
+    width: 80%;
+}
+
+/**********zone affichage du choix***************/
+.choix{
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+.you{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+.you img{
+    width: 70%;
+    height: 70%;
+}
+#imgYou{
+    background-color: cornflowerblue;
+    border-radius: 12%;
+    box-shadow: none;
+}
+#imgIa{
+    border-radius: 12%;
+    background-color: brown;
+    box-shadow: none;
+}
+
+.vs{
+    margin: 0 10px;
+    font-size: 3em;
+}
+/*images du joueur qui apparait quand on clique sur le choix*/
+#pierre1{
+    background-image: url("img/pierre.png");
+}
+#papier1{
+    background-image: url("img/feuille.png");
+    display: none;
+}
+#ciseau1{
+    background-image: url("img/ciseaux.png");
+    display: none;
+}
+/*image de l'IA*/
+.pierre2{
+    content: url("img/pierre.png");
+    display: none;
+}
+.papier2{
+    content: url("img/feuille.png");
+    display: none;
+}
+.ciseau2{
+    content: url("img/ciseaux.png");
+    display: none;
+}
+/*****************zone du resultat **************************/
+.resultat{
+    background-color: grey;
+    height: 150px;
+}
+
+.resultat h2{
+    margin-top: 0;
+    line-height: 150px;
+    font-size: 4em;
+}
+
+/****************zone nouvelle partie***************************/
+.newPartie{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 150px;
+}
+#newParty{
+    font-family: "Stylish";
+    margin-top: 20px;
+    background-color: blueviolet;
+    border-radius: 2%;
+    border: none;
+    font-size: 2em;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    width: 250px;
+    height: 90px;
+    box-shadow: 1px 0 5px black;
+}
+#newParty:hover{
+    box-shadow: 0 0 10px gray;
+}

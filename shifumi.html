@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/shifumi.css">
+    <title>Shi-Fu-Mi</title>
+</head>
+<body>
+    <header>
+<!-------------------titre de la page--------------------------->
+        <h1>Shi-Fu-Mi !</h1>
+    </header>
+    <main>
+<!-------------------zone choix de l'icone---------------------->
+        <div class="container1">
+        <div class="logo">
+            <button id="pi"><img src="style/img/pierre.png" alt="pierre"></button>
+            <button id="pa"><img src="style/img/feuille.png" alt="papier"></button>
+            <button id="ci"><img src="style/img/ciseaux.png" alt="ciseaux"></button>
+        </div>
+            <h2 id="txChoix">Faites votre choix !</h2>
+        </div>
+<!---------------zone affichage du choix ---------------------->
+        <div class="choix">
+            <div class="you">
+                <img id="imgYou" src="style/img/you.png" alt="toi">
+                <div id="pierre1" display="none"></div>
+                <div id="papier1" display= "none"></div>
+                <div id="ciseau1" display= "none"></div>
+                <div class="vs">
+                    <p>VS</p>
+                </div>
+                <img id="imgIa" src="style/img/ia.png" alt="IA">
+                <div class="pierre2"></div>
+                <div class="papier2"></div>
+                <div class="ciseau2"></div>
+            </div>
+        </div>
+<!---------------zone du resultat------------------------------->
+        <div class="resultat">
+            <h2 id="quiGagne">Qui va gagner ?</h2>
+        </div>
+<!---------------zone nouvelle partie----------------------------->
+        <div class="newPartie">
+            <button onclick="reload()" id="newParty">Let's-a go!</button>
+        </div>
+    </main>
+    <script src="shifumi.js"></script>
+</body>
+</html>
