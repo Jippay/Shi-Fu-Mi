@@ -9,7 +9,7 @@
     font-family: "Stylish";
     src: url("img/stylish/Stylish-Regular.ttf");
 }
-
+/*******************/
 html{
     width: 100%;
     height: auto;
@@ -36,7 +36,6 @@ h2, .txchoix{
     margin-top: 10px;
     text-align: center;
 }
-
 
 /******************zone choix de l'icone***********************/
 .container1{
